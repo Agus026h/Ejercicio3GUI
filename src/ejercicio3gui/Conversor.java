@@ -136,10 +136,16 @@ public class Conversor extends javax.swing.JFrame {
     }//GEN-LAST:event_jTtemperaturaActionPerformed
 
     private void jBConvertirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBConvertirActionPerformed
+        
+        try{
         int x = Integer.parseInt(jTtemperatura.getText());
         double far = (x * 9.0 / 5) + 32;
 
         JOptionPane.showMessageDialog(rootPane, "La temperatura en fahrenheit es: " + far);
+        }catch(NumberFormatException e) {
+                JOptionPane.showMessageDialog(rootPane, "Por favor, ingrese solamente numeros");
+            }
+        
     }//GEN-LAST:event_jBConvertirActionPerformed
 
     /**
