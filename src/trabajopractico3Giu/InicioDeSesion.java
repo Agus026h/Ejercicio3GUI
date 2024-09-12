@@ -21,7 +21,7 @@ public class InicioDeSesion extends javax.swing.JFrame {
     public InicioDeSesion() {
         initComponents();
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -234,12 +234,12 @@ public class InicioDeSesion extends javax.swing.JFrame {
 
     private void JTUsuarioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_JTUsuarioKeyTyped
         // TODO add your handling code here:
-        String usuario=JTUsuario.getText();
+   
     }//GEN-LAST:event_JTUsuarioKeyTyped
 
     private void jTPasswordKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTPasswordKeyTyped
         // TODO add your handling code here:
-       String contraseña= jTPassword.getText();
+       
     }//GEN-LAST:event_jTPasswordKeyTyped
 
     private void jBVerificarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jBVerificarMouseClicked
@@ -252,11 +252,12 @@ public class InicioDeSesion extends javax.swing.JFrame {
     }//GEN-LAST:event_JTUsuarioActionPerformed
 
     private void jBVerificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBVerificarActionPerformed
-         if("alumno@ulp.edu.ar".equals(this.JTUsuario.getText()) && "12345678".equals(jTPassword.getText())){
+         if("alumno@ulp.edu.ar".equals(JTUsuario.getText()) && "12345678".equals(jTPassword.getText())){
        JOptionPane.showMessageDialog(rootPane, "Autententicacion correcta, Bienvenido!!!");
        
        }else{
          JOptionPane.showMessageDialog(rootPane, "Usuario y/o contraseña incorrectos");
+        
          }
     }//GEN-LAST:event_jBVerificarActionPerformed
 
